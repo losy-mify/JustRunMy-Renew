@@ -332,7 +332,7 @@ def renew(sb) -> bool:
 
     print("🖱️ 点击 Reset Timer 按钮...")
     try:
-        sb.click('xpath=//button[contains(@class, "bg-amber-500") and contains(., "Reset Timer")]')
+        sb.click('button.bg-amber-500.rounded-lg')
         time.sleep(3)
     except Exception as e:
         print(f"❌ 找不到 Reset Timer 按钮: {e}")
